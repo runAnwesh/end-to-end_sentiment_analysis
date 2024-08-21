@@ -2,13 +2,12 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from transformers import pipeline
 
-# For other task options, see https://huggingface.co/docs/transformers/en/main_classes/pipelines 
 sentiment_pipeline = pipeline("sentiment-analysis")
 
 app = FastAPI()
 
-data = ["I love you", "I hate you"]
-sentiment_pipeline(data)
+# data = ["I love you", "I hate you"]
+# sentiment_pipeline(data)
 
 class RequestModel(BaseModel):
     input_string: str
