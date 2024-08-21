@@ -19,7 +19,7 @@ This will expose an API endpoint on `http://your_address:8000/analyze`
 
 ## Usage ⏏️
 
-You can run the 'call_api.py' file, where you specify the input data, using the command:
+You can run the `call_api.py` file, where you specify the input data, using the command:
 ```bash
 python call_api.py
 ```
